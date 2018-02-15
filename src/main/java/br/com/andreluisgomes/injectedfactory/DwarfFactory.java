@@ -1,6 +1,5 @@
 package br.com.andreluisgomes.injectedfactory;
 
-import br.com.andreluisgomes.abstractfactory.domain.Warrior;
 import br.com.andreluisgomes.injectedfactory.domain.Dwarf;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
