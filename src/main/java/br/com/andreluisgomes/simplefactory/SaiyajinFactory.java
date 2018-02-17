@@ -9,7 +9,7 @@ import br.com.andreluisgomes.simplefactory.domain.Vegeta;
  */
 public class SaiyajinFactory {
 
-    public static Saiyajin withPower(Long power){
+    public static Saiyajin withPower(final Long power){
         if(power < 3000)
             return new Vegeta(power);
         else if (power > 8000)

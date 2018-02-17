@@ -1,6 +1,6 @@
-package br.com.andreluisgomes.injectedfactory;
+package br.com.andreluisgomes.factorylike;
 
-import br.com.andreluisgomes.injectedfactory.domain.*;
+import br.com.andreluisgomes.factorylike.domain.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

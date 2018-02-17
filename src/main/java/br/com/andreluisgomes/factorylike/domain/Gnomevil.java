@@ -1,4 +1,4 @@
-package br.com.andreluisgomes.injectedfactory.domain;
+package br.com.andreluisgomes.factorylike.domain;
 
 import org.springframework.stereotype.Component;
 

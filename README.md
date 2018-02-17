@@ -1,5 +1,7 @@
 # Factories and Factory-like
 
+## Simple Factory
+
 ## Abstract Factory
 
 ## Enum Factory

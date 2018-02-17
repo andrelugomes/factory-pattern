@@ -4,7 +4,7 @@ import br.com.andreluisgomes.abstractfactory.domain.Warrior;
 import br.com.andreluisgomes.abstractfactory.domain.Elf;
 
 
-public class ElfWarriorFactory implements WarriorFactory {
+public class ElfWarriorFactory extends AbstractFactory implements WarriorFactory {
 
     @Override
     public Warrior createWarrior() {

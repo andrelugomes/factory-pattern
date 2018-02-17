@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AxeFactoryBeanConfig {
 
-    @Bean
+    @Bean(name = "commonAxe")
     public AxeFactory axeFactory() {
         AxeFactory factory = new AxeFactory();
         factory.setAttack(12);
@@ -19,8 +19,18 @@ public class AxeFactoryBeanConfig {
         return factory;
     }
 
-    @Bean(name = "commomAxe")
+    @Bean
     public Axe axe() throws Exception {
         return axeFactory().getObject();
+    }
+
+    @Bean(name = "powerfulAxe")
+    public AxeFactory powerfulAxe() {
+        AxeFactory factory = new AxeFactory();
+        factory.setAttack(100);
+        factory.setDefense(80);
+        factory.setHands(Hands.TWO);
+        factory.setType(WeaponType.AXE);
+        return factory;
     }
 }

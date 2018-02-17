@@ -7,13 +7,6 @@ public class Axe {
     private Hands hands;
     private WeaponType type;
 
-    public Axe(int attack, int defense, Hands hands, WeaponType type) {
-        this.attack = attack;
-        this.defense = defense;
-        this.hands = hands;
-        this.type = type;
-    }
-
     public int getAttack() {
         return attack;
     }
@@ -28,5 +21,21 @@ public class Axe {
 
     public WeaponType getType() {
         return type;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
+
+    public void setHands(Hands hands) {
+        this.hands = hands;
+    }
+
+    public void setType(WeaponType type) {
+        this.type = type;
     }
 }
