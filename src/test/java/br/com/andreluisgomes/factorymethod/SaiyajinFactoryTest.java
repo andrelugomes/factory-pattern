@@ -1,8 +1,8 @@
-package br.com.andreluisgomes.simplefactory;
+package br.com.andreluisgomes.factorymethod;
 
-import br.com.andreluisgomes.simplefactory.domain.Kakarotto;
-import br.com.andreluisgomes.simplefactory.domain.Saiyajin;
-import br.com.andreluisgomes.simplefactory.domain.Vegeta;
+import br.com.andreluisgomes.factorymethod.domain.Kakarotto;
+import br.com.andreluisgomes.factorymethod.domain.Saiyajin;
+import br.com.andreluisgomes.factorymethod.domain.Vegeta;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;

@@ -1,8 +1,8 @@
-package br.com.andreluisgomes.simplefactory;
+package br.com.andreluisgomes.factorymethod;
 
-import br.com.andreluisgomes.simplefactory.domain.Kakarotto;
-import br.com.andreluisgomes.simplefactory.domain.Saiyajin;
-import br.com.andreluisgomes.simplefactory.domain.Vegeta;
+import br.com.andreluisgomes.factorymethod.domain.Kakarotto;
+import br.com.andreluisgomes.factorymethod.domain.Saiyajin;
+import br.com.andreluisgomes.factorymethod.domain.Vegeta;
 
 /**
  * Created by andre on 16/02/18.

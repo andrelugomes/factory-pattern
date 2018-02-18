@@ -35,7 +35,7 @@ public class AxeFactoryTest {
     }
 
     @Test
-    public void shouldFactoryAPowerfullAxe() {
+    public void shouldFactoryAPowerfulAxe() {
 
         assertThat(powerfulAxe.getAttack(), equalTo(100));
         assertThat(powerfulAxe.getDefense(), equalTo(80));

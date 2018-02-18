@@ -1,6 +1,5 @@
 package br.com.andreluisgomes.abstractfactory.factory;
 
-import br.com.andreluisgomes.abstractfactory.domain.Warrior;
 import br.com.andreluisgomes.abstractfactory.domain.WarriorType;
 
 /**
@@ -20,6 +19,4 @@ public abstract class AbstractFactory {
         }
         return factory;
     }
-
-    public abstract Warrior createWarrior();
 }

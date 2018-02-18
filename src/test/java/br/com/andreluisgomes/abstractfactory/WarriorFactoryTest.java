@@ -10,27 +10,29 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 @RunWith(SpringRunner.class)
 public class WarriorFactoryTest {
 
     @Test
-    public void shouldCreateAElfWarrior(){
+    public void shouldCreateAElfWarriorByFactoryMethod(){
 
         WarriorFactory elfWarriorFactory = new ElfWarriorFactory();
         Warrior elf = elfWarriorFactory.createWarrior();
 
-        assertThat(elf, instanceOf(Elf.class));
+        assertThat(elf).isInstanceOf(Elf.class);
+        assertThat(elf.battleCry()).isNotBlank();
     }
 
     @Test
-    public void shouldCreateAOrcWarrior(){
+    public void shouldCreateAOrcWarriorByFactoryMethod(){
 
         WarriorFactory orcWarriorFactory = new OrcWarriorFactory();
         Warrior orc = orcWarriorFactory.createWarrior();
 
-        assertThat(orc, instanceOf(Orc.class));
+        assertThat(orc).isInstanceOf(Orc.class);
+        assertThat(orc.battleCry()).isNotBlank();
     }
 }

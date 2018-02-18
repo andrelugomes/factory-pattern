@@ -1,13 +1,13 @@
-package br.com.andreluisgomes.simplefactory.domain;
+package br.com.andreluisgomes.factorymethod.domain;
 
 /**
  * Created by andre on 16/02/18.
  */
-public class Vegeta implements Saiyajin {
+public class Kakarotto implements Saiyajin {
 
     private Long power;
 
-    public Vegeta(Long power) {
+    public Kakarotto(Long power) {
         this.power = power;
     }
 

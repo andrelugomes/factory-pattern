@@ -2,7 +2,7 @@ package br.com.andreluisgomes.abstractfactory.domain;
 
 public class Elf implements Warrior {
 
-    static final String BATTLE_CRY = "Él síla lúmena vomentienguo";
+    static final String BATTLE_CRY = "Ã‰l sÃ­la lÃºmena vomentienguo";
 
     @Override
     public String battleCry() {

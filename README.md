@@ -1,6 +1,6 @@
 # Factories and Factory-like
 
-## Simple Factory
+## Factory Method
 
 ## Abstract Factory
 
