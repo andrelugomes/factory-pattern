@@ -30,7 +30,12 @@ public class AxeFactory implements FactoryBean<Axe> {
 
     @Override
     public Axe getObject() throws Exception {
-        return new Axe(attack,defense,hands,type);
+        Axe axe = new Axe();
+        axe.setAttack(attack);
+        axe.setDefense(defense);
+        axe.setHands(hands != null ? hands : Hands.ONE);
+        axe.setType(type != null ? type : WeaponType.AXE);
+        return axe;
     }
 
     @Override
