@@ -7,8 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -25,10 +24,10 @@ public class DwarfFactoryTest {
         Dwarf madTechnomancer = factory.ofOrThrow("MadTechnomancer");
         Dwarf foremanKneebiter = factory.ofOrThrow("Foreman Kneebiter");
 
-        assertThat(gnomevil, instanceOf(Gnomevil.class));
-        assertThat(lloyd, instanceOf(Lloyd.class));
-        assertThat(madTechnomancer, instanceOf(MadTechnomancer.class));
-        assertThat(foremanKneebiter, instanceOf(ForemanKneebiter.class));
+        assertThat(gnomevil).isExactlyInstanceOf(Gnomevil.class);
+        assertThat(lloyd).isExactlyInstanceOf(Lloyd.class);
+        assertThat(madTechnomancer).isExactlyInstanceOf(MadTechnomancer.class);
+        assertThat(foremanKneebiter).isExactlyInstanceOf(ForemanKneebiter.class);
     }
 
     @Test(expected = RuntimeException.class)

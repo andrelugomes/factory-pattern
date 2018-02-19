@@ -7,8 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ElvesTypeEnumFactoryTest {
@@ -18,7 +17,7 @@ public class ElvesTypeEnumFactoryTest {
 
         Elves elves = ElvesTypeEnumFactory.LIGHT.createElves();
 
-        assertThat(elves, instanceOf(LightElves.class));
+        assertThat(elves).isExactlyInstanceOf(LightElves.class);
     }
 
     @Test
@@ -26,6 +25,6 @@ public class ElvesTypeEnumFactoryTest {
 
         Elves elves = ElvesTypeEnumFactory.DARK.createElves();
 
-        assertThat(elves, instanceOf(DarkElves.class));
+        assertThat(elves).isExactlyInstanceOf(DarkElves.class);
     }
 }

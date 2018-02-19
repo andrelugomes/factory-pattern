@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import static org.hamcrest.Matchers.instanceOf;
-import static org.junit.Assert.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
@@ -25,10 +25,10 @@ public class HobbitFactoryTest {
         Hobbit pippin = factory.getHobbit("peregrin");
         Hobbit merry = factory.getHobbit("meriadoc");
 
-        assertThat(frodo, instanceOf(Frodo.class));
-        assertThat(sam, instanceOf(Samwise.class));
-        assertThat(pippin, instanceOf(Peregrin.class));
-        assertThat(merry, instanceOf(Meriadoc.class));
+        assertThat(frodo).isExactlyInstanceOf(Frodo.class);
+        assertThat(sam).isExactlyInstanceOf(Samwise.class);
+        assertThat(pippin).isExactlyInstanceOf(Peregrin.class);
+        assertThat(merry).isExactlyInstanceOf(Meriadoc.class);
     }
 
 }
