@@ -1,22 +1,22 @@
-package br.com.andreluisgomes.factorylike.domain;
+package br.com.andreluisgomes.servicelocatormanual.domain;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class ForemanKneebiter implements Dwarf {
+public class Gnomevil implements Dwarf {
 
     @Override
     public String name() {
-        return "Foreman Kneebiter";
+        return "Gnomevil";
     }
 
     @Override
     public Long hp() {
-        return 570L;
+        return 250000L;
     }
 
     @Override
     public Long exp() {
-        return 445L;
+        return 45000L;
     }
 }

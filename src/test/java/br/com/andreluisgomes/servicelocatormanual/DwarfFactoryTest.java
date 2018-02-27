@@ -1,6 +1,6 @@
-package br.com.andreluisgomes.factorylike;
+package br.com.andreluisgomes.servicelocatormanual;
 
-import br.com.andreluisgomes.factorylike.domain.*;
+import br.com.andreluisgomes.servicelocatormanual.domain.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

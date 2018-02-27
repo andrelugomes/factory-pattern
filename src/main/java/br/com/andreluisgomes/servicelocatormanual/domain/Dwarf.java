@@ -1,4 +1,4 @@
-package br.com.andreluisgomes.factorylike.domain;
+package br.com.andreluisgomes.servicelocatormanual.domain;
 
 public interface Dwarf {
 

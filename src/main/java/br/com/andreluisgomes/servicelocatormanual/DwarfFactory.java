@@ -1,6 +1,6 @@
-package br.com.andreluisgomes.factorylike;
+package br.com.andreluisgomes.servicelocatormanual;
 
-import br.com.andreluisgomes.factorylike.domain.Dwarf;
+import br.com.andreluisgomes.servicelocatormanual.domain.Dwarf;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
